@@ -14,7 +14,7 @@ The plugin connects to one service only: `https://mcp.vh3.ai/mcp`, operated by V
 
 ## Install
 
-- **Claude Code**: run `/plugin`, add this repository as a marketplace source or install from the directory listing, then enable `vh3-ai`. To try a local checkout: `claude --plugin-dir ./vh3-ai-claude-plugin`.
+- **Claude Code**: `/plugin install vh3-ai --marketplace vH3-Digital/vh3-ai-claude-plugin` (Claude Code 2.1.275 or later), or install from the directory listing once it is live. To try a local checkout: `claude --plugin-dir ./vh3-ai-claude-plugin`.
 - **claude.ai or Cowork**: Customize, then Plugins, then upload the plugin as a zip of this repository (zip the repository root, so `.claude-plugin/plugin.json` is at the top level).
 
 Then ask, for example, "how are we doing this week?", or run `/vh3-ai:who-can-take JOB123`.
@@ -28,5 +28,6 @@ claude plugin validate --strict .
 ## Maintainer notes
 
 - The icon in `assets/icon.png` is a placeholder. The final icon comes from ticket #838.
-- TODO, to confirm before submission: `supportUrl` (https://vh3.ai/support), `privacyPolicyUrl` (https://vh3.ai/privacy), `termsOfServiceUrl` (https://vh3.ai/terms), and the licence (MIT chosen for this plugin; the main VH3 repository is all rights reserved).
+- Policy links: [privacy policy](https://www.vh3.ai/legal-and-compliance/privacy-policy), [VH3 AI product terms](https://www.vh3.ai/legal-and-compliance/vh3-ai-product-terms-and-conditions), [setup and troubleshooting](https://docs.vh3.ai/agent-kits/mcp-setup). Support: contact@vh3.ai.
+- TODO before submission: confirm the licence (MIT chosen for this plugin; the main VH3 repository is all rights reserved).
 - Keep out of this repo: `bin/`, hooks, local MCP servers, `.mcpb` bundles, `.DS_Store`, files over 256 KiB.

@@ -5,15 +5,23 @@
   "description": "Field service intelligence for VH3 AI: ask about jobs, engineers, customers, quotes, invoices and scheduling, and get a skill and commands that use the tools well.",
   "author": {
     "name": "VH3 Digital",
-    "url": "https://vh3.ai"
+    "url": "https://www.vh3.ai"
   },
-  "homepage": "https://docs.vh3.ai",
+  "homepage": "https://www.vh3.ai",
   "repository": "https://github.com/vH3-Digital/vh3-ai-claude-plugin",
   "license": "MIT",
-  "keywords": ["field-service", "vh3", "jobs", "scheduling", "bigchange", "invoices", "quotes"],
+  "keywords": [
+    "field-service",
+    "vh3",
+    "jobs",
+    "scheduling",
+    "bigchange",
+    "invoices",
+    "quotes"
+  ],
   "icon": "./assets/icon.png",
   "documentationUrl": "https://docs.vh3.ai",
-  "supportUrl": "https://vh3.ai/support",
-  "privacyPolicyUrl": "https://vh3.ai/privacy",
-  "termsOfServiceUrl": "https://vh3.ai/terms"
+  "supportUrl": "https://docs.vh3.ai/agent-kits/mcp-setup",
+  "privacyPolicyUrl": "https://www.vh3.ai/legal-and-compliance/privacy-policy",
+  "termsOfServiceUrl": "https://www.vh3.ai/legal-and-compliance/vh3-ai-product-terms-and-conditions"
 }

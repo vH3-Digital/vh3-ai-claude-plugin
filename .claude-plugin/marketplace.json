@@ -1,0 +1,15 @@
+{
+  "name": "vh3-ai",
+  "description": "The VH3 AI plugin for Claude: field service intelligence from VH3, connected through https://mcp.vh3.ai/mcp.",
+  "owner": {
+    "name": "VH3 Digital",
+    "email": "contact@vh3.ai"
+  },
+  "plugins": [
+    {
+      "name": "vh3-ai",
+      "source": "./",
+      "description": "Field service intelligence for VH3 AI: jobs, engineers, customers, quotes, invoices and scheduling in Claude."
+    }
+  ]
+}
