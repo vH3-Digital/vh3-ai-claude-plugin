@@ -50,7 +50,7 @@ Rules of thumb:
 
 ## Units and data quality
 
-- `actualDuration` is minutes. `plannedDuration` is seconds as received from BigChange, so the two are not directly comparable.
+- `actualDuration` and `plannedDuration` are both minutes. `plannedDuration` matches the planned start-to-end window.
 - `startDeltaMins` and `endDeltaMins` are minutes, negative meaning early. `endDeltaMins` is the reliable overrun measure.
 - An overrun above about 480 minutes, or an `actualDuration` of 1 minute beside a large overrun, usually means the job was opened and closed on the device without real site time. Treat it as a data-quality artefact and say so rather than blaming the engineer.
 - Related jobs can share a `jobGroupId` (for example callout, then quote, then return visit). Do not count a multi-stage group as several failures.
