@@ -42,6 +42,8 @@ Rules of thumb:
 ## Defaults
 
 - Dates passed to the list tools are full UTC timestamps, `YYYY-MM-DDTHH:MM:SSZ`. A bare date is rejected.
+- `list_jobs` dates filter on `createdAt` unless `date_field` is set. For work planned on a day use `date_field: plannedStartAt`; for work done on a day use `actualStartAt`. `date_to` is exclusive.
+- `aggregate_jobs` `filters.startDate`/`endDate` apply only when `compare_to` is not set.
 - Job status `sent` means confirmed and dispatched to the engineer's device. Planned work is `scheduled` plus `sent`.
 - `aggregate_jobs` filters on a time axis: `actualStartAt` (default, only work that began), `actualEndAt` (completions), `plannedStartAt` (scheduled work, including unactioned jobs), `createdAt` (intake), `scheduledAt` (dispatch). Pick the axis that matches the question. For performance use actual times, not `createdAt`.
 - Use `compact` output where offered.

@@ -1,7 +1,7 @@
 {
   "name": "vh3-ai",
   "displayName": "VH3 AI",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Field service intelligence for VH3 AI: ask about jobs, engineers, customers, quotes, invoices and scheduling, and get a skill and commands that use the tools well.",
   "author": {
     "name": "VH3 Digital",
